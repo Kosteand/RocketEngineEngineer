@@ -13,7 +13,7 @@ import numpy as np
 #         self.reactants = reactants
 #         self. products = products
 
-class Product:
+class Substance:
     def __init__(self, name, mols, temperature, shomate):
         self.name = name #Chemical formula
         self.mols = mols #The Moles produced in a reactuion
