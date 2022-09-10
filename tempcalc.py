@@ -157,6 +157,13 @@ substances = [Water]
 print(Shomate(substances[0], substances[0].shomate[0], 298, 500))
 print(Shomate(substances[0], substances[0].shomate[1], substances[0].shomate[1][5], substances[0].shomate[1][6]))
 print("Heat Distro ----------------------------------------------------")
-Heatdistrobution(substances, 17000)
+print(Shomate(Products[H2O], Products[H2O].shomate[H2O], 298, 500))
+print(Shomate(Products[H2O], Products[H2O].shomate[1], Products[H2O].shomate[1][5], Products[H2O].shomate[1][6]))
+print("Heat Distro ----------------------------------------------------")
+try:
+    Heatdistrobution(Products, 500)
+except IndexError:
+    print("ERROR:Result is outside of the highest Partition temperature range.")
+except TypeError:
+    print("ERROR: The temperature is below the lowest value of the highest partition. Delete the highest Partition and try again")
 print(Water.temperature)
-#Solution
